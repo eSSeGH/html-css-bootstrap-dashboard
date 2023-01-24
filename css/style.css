@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 ul,
@@ -45,6 +46,12 @@ TITLES AND TEXTS
 .my-h3 {
     font-size: 1.2rem;
 }
+
+/**********
+CONTAINERS
+***********/
+
+
 
 /**********
 LAYOUT
@@ -106,5 +113,12 @@ MEADIAUERY
     .aside1 {
         width: 150px;
     }
-    
+
+    .my-container1 {
+        padding-left: 2rem;
+    }  
+
+    .aside1 .row {
+        text-align: start !important;
+    }
 }
