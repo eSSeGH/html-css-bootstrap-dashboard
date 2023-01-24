@@ -12,7 +12,64 @@
 
 <body class="d-flex flex-column">
 
-    <header class="header1 flex-shrink-0 bg-primary"></header>
+    <header class="header1 flex-shrink-0 d-flex align-items-center">
+
+        <nav class="navbar navbar-expand-xl w-100">
+
+            <div class="container-fluid bg-white">
+
+                <a class="navbar-brand" href="#">
+
+                    <img class="logo-bg d-none d-xl-inline" src="./img/logo.svg" alt="Boolean logo big version">
+                    <img class="logo-sm d-inline d-xl-none" src="./img/mobile-logo.png" alt="Boolean logo small version">
+
+                </a>
+
+                <form class="d-flex w-100" role="search">
+                    <input class="form-control" type="search" placeholder="&#xf002; Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                </form>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                
+                </div>
+
+              
+                <div class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            
+        </nav>
+
+    </header>
 
     <main class="flex-grow-1 d-flex overflow-y-scroll">
 
