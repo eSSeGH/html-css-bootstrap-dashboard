@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+menu {
+    list-style-type: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none !important;
+}
+
+img,
+figure {
+    max-height: 100%;
+}
+
+:root {
+    --dark-blue: #051E34;
+}
+
+.relative {
+    position: relative;
+}
+
+/**********
+TITLES AND TEXTS
+***********/
+
+.my-h1 {
+    font-size: 2.5rem;
+}
+
+.my-h2 {
+    font-size: 1.5rem;
+}
+
+.my-h3 {
+    font-size: 1.2rem;
+}
+
+
+/**********
+LAYOUT
+***********/
+
+body {
+    height: 100vh;
+}
+
+/**********
+HEADER
+***********/
+
+.header1 {
+    height: 70px;
+}
+
+/**********
+ASIDE
+***********/
+
+.aside1 {
+    background-image: url("../img/sidebar-bg.png");
+    background-color: var(--dark-blue)    ;
+    width: 70px;
+}
+
+/**********
+MAIN-CONTENT
+***********/
+
+/**********
+MEADIAUERY
+***********/
+
+@media all and (min-width: 1200px) {
+    .aside1 {
+        width: 150px;
+    }
+    
+}
