@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 ul,
@@ -21,6 +22,8 @@ figure {
 
 :root {
     --dark-blue: #051E34;
+    --white-header: #F8F9FA;
+    --grey-header-placeholder: #E5E5E5;
 }
 
 .relative {
@@ -43,7 +46,6 @@ TITLES AND TEXTS
     font-size: 1.2rem;
 }
 
-
 /**********
 LAYOUT
 ***********/
@@ -58,6 +60,28 @@ HEADER
 
 .header1 {
     height: 70px;
+    background-color: var(--white-header);
+}
+
+.logo-sm {
+    height: 50px;
+}
+
+.form-control {
+    background-color: var(--grey-header-placeholder) !important;
+}
+
+.nav-link i {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.dropdown-icon {
+    color: darkorange;
+}
+
+.dropstart .dropdown-toggle::before {
+  display: none !important;
 }
 
 /**********
@@ -66,7 +90,7 @@ ASIDE
 
 .aside1 {
     background-image: url("../img/sidebar-bg.png");
-    background-color: var(--dark-blue)    ;
+    background-color: var(--dark-blue);
     width: 70px;
 }
 
