@@ -25,6 +25,7 @@ figure {
     --dark-blue: #051E34;
     --white-header: #F8F9FA;
     --grey-header-placeholder: #E5E5E5;
+    --blue-badge: #165BBA;
 }
 
 .relative {
@@ -50,7 +51,6 @@ TITLES AND TEXTS
 /**********
 CONTAINERS
 ***********/
-
 
 
 /**********
@@ -106,8 +106,56 @@ MAIN-CONTENT
 ***********/
 
 /**********
-MEADIAUERY
+HEADER2
 ***********/
+
+.header2 .badge {
+    background-color: var(--blue-badge);
+}
+
+.header2 .contents {
+    display: contents;
+}
+
+.btn.add-student {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    padding: 0;
+}
+
+/**********
+NEXT-CLASSES
+***********/
+
+th[scope=row]::before {
+    display: inline-block;
+    content: "</>";
+    background-color: orangered;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.table .btn {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    padding: 0;
+}
+
+/**********
+MEDIAUERY
+***********/
+
+@media all and (min-width: 769px) {
+ 
+}
 
 @media all and (min-width: 1200px) {
     .aside1 {
@@ -122,3 +170,4 @@ MEADIAUERY
         text-align: start !important;
     }
 }
+
