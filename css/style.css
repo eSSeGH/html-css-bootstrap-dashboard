@@ -33,27 +33,6 @@ figure {
 }
 
 /**********
-TITLES AND TEXTS
-***********/
-
-.my-h1 {
-    font-size: 2.5rem;
-}
-
-.my-h2 {
-    font-size: 1.5rem;
-}
-
-.my-h3 {
-    font-size: 1.2rem;
-}
-
-/**********
-CONTAINERS
-***********/
-
-
-/**********
 LAYOUT
 ***********/
 
@@ -150,13 +129,37 @@ th[scope=row]::before {
     padding: 0;
 }
 
+thead .lg-th {
+    width: 50%;
+}
+
+thead th:not(.lg-th) {
+    white-space: nowrap;
+}
+
+/**********
+TODO
+***********/
+
+.first>.input-group-text {
+    border-radius: 10px 0 0 0;
+}
+
+.first .form-control{
+    border-radius: 0 10px 0 0;
+}
+
+.last>.input-group-text {
+    border-radius: 0 0 0 10px;
+}
+
+.last .form-control{
+    border-radius: 0 0 10px 0;
+}
+
 /**********
 MEDIAUERY
 ***********/
-
-@media all and (min-width: 769px) {
- 
-}
 
 @media all and (min-width: 1200px) {
     .aside1 {
