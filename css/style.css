@@ -13,7 +13,6 @@ menu {
 
 a {
     color: currentColor;
-    text-decoration: none !important;
 }
 
 img,
@@ -156,6 +155,10 @@ TODO
 .last .form-control{
     border-radius: 0 0 10px 0;
 }
+
+/**********
+GRAPH
+***********/
 
 /**********
 MEDIAUERY
