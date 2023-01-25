@@ -120,40 +120,149 @@
         <div class="main-content flex-grow-1 overflow-y-scroll">
 
             <!-- start header2 -->
-            <section class="header2 bg-primary py-3 px-">
+            <section class="header2 bg-primary">
 
-                <div class="my-container1">
+                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-auto text-white">
 
-                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-auto text-white">
+                    <div class="col col-lg-6 my-4">
 
-                        <div class="col col-lg-6">
+                        <h1 class="d-inline">Boolean</h1>
 
-                            <h1 class="d-inline">Boolean</h1>
+                        <span class="badge rounded-pill">Piano Blaze</span>
+                        <span class="badge rounded-pill">3 app</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <span class="badge rounded-pill">Boolean mobile app</span>
+                        <span class="badge rounded-pill">Boolean web app</span>
+                        <span class="badge rounded-pill">Boolean blog app</span>
 
-                            <span class="badge rounded-pill">Piano Blaze</span>
-                            <span class="badge rounded-pill">3 app</span>
-                            <i class="fa-solid fa-angles-right"></i>
-                            <span class="badge rounded-pill">Boolean mobile app</span>
-                            <span class="badge rounded-pill">Boolean web app</span>
-                            <span class="badge rounded-pill">Boolean blog app</span>
+                    </div>
 
-                        </div>
+                    <div class="col col-lg-3 my-4">
+                        <span>studenti online negli ultimi 30 minuti</span>
+                            
+                        <data class="fs-1 d-block">125</data>
+                    </div>
 
-                        <div class="col col-lg-3">
-                            <span>studenti online negli ultimi 30 minuti</span>
+                    <div class="col col-lg-3 my-4">
+
+                        <span>Nuovo Studente</span>
+
+                        <!-- start add student offcanvas button -->
+                        <button class="add-student btn btn-outline-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
+
+                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
                                 
-                            <data class="fs-1 d-block">125</data>
+                                <div class="row">
+
+                                    <div class="col-12 col-sm-6">
+
+                                        <span class="d-block">Nome</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="Nome" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+
+                                        <span class="d-block">Cognome</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="Cognome" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+
+                                        <span>E-mail</span>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control bg-light" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+
+                                        <span class="d-block">Password</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                        <span class="d-block">Indirizzo</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="Indirizzo" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+
+                                        <span class="d-block">Città</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="Città" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+
+                                        <span>Stato</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" aria-label="Text input with dropdown button">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Italia</a></li>
+                                                <li><a class="dropdown-item" href="#">Al-Mazrah</a></li>
+                                                <li><a class="dropdown-item" href="#">Pinnacoli pendenti</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12 col-sm-2">
+
+                                        <span class="d-block">CAP</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control bg-light" placeholder="CAP" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+
+                                        <span>Foto</span>
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Scegli file</button>
+                                            <input type="text" class="form-control bg-light" placeholder="Nessun file selezionato" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <input type="checkbox">
+                                    <span>Seleziona per proseguire</span>
+
+                                </div>
+
+                                <div class="mb-3">
+
+                                    <button type="button" class="btn btn-primary">Salva</button>
+                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                    
+                                </div>
+                                
+
+                            </div>
+
                         </div>
-
-                        <div class="col col-lg-3">
-
-                            <span>Nuovo Studente</span>
-
-                            <!-- start add student offcanvas button -->
-                            <button type="button" class="add-student btn btn-outline-light ">+</button>
-                            <!-- end add student offcanvas button -->
-
-                        </div>
+                        <!-- end add student offcanvas button -->
 
                     </div>
 
@@ -169,7 +278,7 @@
 
                     <div class="row">
 
-                        <div class="co-12 col-xl-8">
+                        <div class="col-12 col-xl-8">
                             
                             <!-- next-classes section -->
                             <section class="next-classes pb-3">
@@ -406,7 +515,7 @@
 
                         </div>
 
-                        <div class="co-12 col-xl-4">
+                        <div class="col-12 col-xl-4">
 
                             <!-- todo section -->
                             <section class="todo mb-3">

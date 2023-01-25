@@ -80,14 +80,17 @@ ASIDE
     height: calc(100vh - 70px);
 }
 
-/**********
+/******************
 MAIN-CONTENT
-***********/
+******************/
 
 /**********
 HEADER2
 ***********/
 
+.header2 {
+    padding-left: 2rem;
+}
 .header2 .badge {
     background-color: var(--blue-badge);
 }
@@ -103,6 +106,10 @@ HEADER2
     width: 40px;
     line-height: 40px;
     padding: 0;
+}
+
+.header2 .offcanvas.offcanvas-end {
+    width: 100%;
 }
 
 /**********
@@ -155,16 +162,17 @@ TODO
 .last .form-control{
     border-radius: 0 0 10px 0;
 }
-
-/**********
-GRAPH
-***********/
-
 /**********
 MEDIAUERY
 ***********/
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 992px) {
+    .header2 .offcanvas.offcanvas-end {
+        width: 50vw;
+    }
+}
+
+@media all and (min-width: 1201px) {
     .aside1 {
         width: 150px;
     }
