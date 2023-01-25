@@ -99,6 +99,7 @@ ASIDE
     background-image: url("../img/sidebar-bg.png");
     background-color: var(--dark-blue);
     width: 70px;
+    height: calc(100vh - 70px);
 }
 
 /**********
