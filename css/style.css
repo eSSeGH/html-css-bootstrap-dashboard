@@ -27,18 +27,6 @@ figure {
     --blue-badge: #165BBA;
 }
 
-.relative {
-    position: relative;
-}
-
-/**********
-LAYOUT
-***********/
-
-body {
-    height: 100vh;
-}
-
 /**********
 HEADER
 ***********/
@@ -52,6 +40,7 @@ HEADER
     height: 50px;
 }
 
+form .input-group-text,
 .form-control {
     background-color: var(--grey-header-placeholder) !important;
 }
@@ -80,6 +69,10 @@ ASIDE
     height: calc(100vh - 70px);
 }
 
+.aside1 :last-child {
+    margin-top: auto;
+}
+
 /******************
 MAIN-CONTENT
 ******************/
@@ -101,7 +94,6 @@ HEADER2
 
 .btn.add-student {
     font-size: 2rem;
-    font-weight: 700;
     height: 40px;
     width: 40px;
     line-height: 40px;
@@ -162,6 +154,24 @@ TODO
 .last .form-control{
     border-radius: 0 0 10px 0;
 }
+
+/**********
+GRAPH
+***********/
+
+.graph .card {
+    padding: 2rem;
+}
+
+.inner-card {
+    border: 1px solid lightgrey;
+    border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;
+}
+
+.card-link {
+    color: blue;
+}
+
 /**********
 MEDIAUERY
 ***********/
